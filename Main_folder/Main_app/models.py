@@ -13,3 +13,9 @@ class teacher(models.Model):
     password = models.CharField(max_length=200)
     def __str__(self):
         return self.name
+class quistions(models.Model):
+    quistion = models.TextField()
+    first_answer = models.TextField()
+    second_answer = models.TextField()
+    third_answer = models.TextField() 
+    right_answer = models.TextField()
